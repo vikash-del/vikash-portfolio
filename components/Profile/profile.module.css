@@ -1,0 +1,123 @@
+.profile {
+    background-color: #F9E6F0;
+    padding: 120px 250px;
+    display: flex;
+}
+
+.profile img{
+    object-fit: cover;
+    border:10px solid white
+}
+
+.swing p{
+    text-align: center;
+}
+
+.text {
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.title {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.description {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.about{
+    margin-left: 70px;
+}
+
+.bio {
+    margin-top: 80px;
+    font-weight: 700;
+}
+
+.des{
+    margin-top: 15px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.43;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.greet{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 42px;
+    color: #2d2d2d;
+    margin-top: 40px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .profile {
+        padding: 120px 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about {
+        margin-left: 0px;
+    }
+    .profileCard{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+.swing {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    float: left;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.swing img {
+    border: 5px solid #f8f8f8;
+    display: block;
+}
+
+.swing:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    top: -10px;
+    left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+/* nail */
+.swing:before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: -14px;
+    left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(3deg);
+    }
+
+    100% {
+        transform: rotate(-3deg);
+    }
+}

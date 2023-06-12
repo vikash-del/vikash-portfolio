@@ -1,0 +1,39 @@
+.explorationsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+  color: #2d2d2d;
+  margin-top: 40px;
+  text-align: center;
+}
+.exploreContainer {
+  margin: 50px 100px;
+}
+.explore {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.explore p {
+  margin-left: 20px;
+  margin-top: 1px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 1024px) {
+  .exploreContainer {
+    margin: 50px 30px;
+  }
+}

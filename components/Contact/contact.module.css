@@ -1,0 +1,75 @@
+.contactContainer{
+    display: grid;
+grid-template-columns: 50% 50%;
+    margin:70px 100px;
+}
+.head{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
+    color: #2D2D2D;
+    margin-bottom: 40px;
+}
+.description{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 27px;
+    color: #2D2D2D;
+}
+
+.contactText{
+    width: 360px;
+}
+
+
+
+.inputfield{
+    background-color: #F3F3F3; 
+    border:none; 
+    height:69px; 
+    margin-bottom: 20px; 
+    width:530px;
+    padding:21px 30px;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputfield::placeholder{
+    color: #2D2D2D;
+}
+
+.descfield{
+    height:231px;
+}
+
+.inputContainer button{
+   width: 235px;
+    color: #FFFFFF;
+   height: 80px;
+   background: #2D2D2D;
+   cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .contactContainer {
+            display: flex;
+         flex-direction: column;
+        grid-template-columns: 100% 100%;
+        margin: 70px 30px;
+    }
+    .inputfield {
+           width:100%; 
+    }
+
+    .inputfield:first-child {
+        margin-top: 80px;
+    }
+
+    .contactText {
+        width: 100%;
+    }
+              
+}

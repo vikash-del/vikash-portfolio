@@ -1,0 +1,25 @@
+.navigation a {
+    color: #2D2D2D;
+    font-weight: 400;
+    font-size: 17px;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+.navigation button{
+display: none;
+}
+
+@media screen and (max-width: 750px) {
+    .hidemenu{
+      display: none;
+  }
+  .navigation button{
+    display:block;
+    color: black;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    margin-top: 10px;
+  }
+  }

@@ -18,10 +18,12 @@
     "@mui/material": "^5.13.4",
     "@next/font": "13.0.7",
     "@types/react-dom": "18.0.9",
+    "@types/react-gtm-module": "^2.0.1",
     "font-awesome": "^4.7.0",
     "next": "13.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-gtm-module": "^2.0.11",
     "typescript": "4.9.4"
   },
   "devDependencies": {

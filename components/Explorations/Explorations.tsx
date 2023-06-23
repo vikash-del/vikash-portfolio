@@ -10,7 +10,7 @@ export default function Explorations() {
       <p className={classes.head}>Explorations</p>
       <div className={classes.exploreContainer}>
       {exploreData.map((item: any) => (
-      <div className={classes.explore}>
+      <div key={item.description} className={classes.explore}>
         <ExploreIcon sx={{ fontSize: 24 }}/>
         <p>{item.description}</p>
       </div>

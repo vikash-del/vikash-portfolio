@@ -13,7 +13,7 @@ export default function Projects() {
       <p className={classes.head}>Projects</p>
       <div className={classes.carouselContainer}>
       {projectData.map((item: any) => (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card key={item.imageSrc} sx={{ maxWidth: 345 }}>
           <CardMedia
             sx={{ height: 140 }}
             image={item.imageSrc}

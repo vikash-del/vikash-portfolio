@@ -9,7 +9,7 @@ export default function Skills() {
       <p className={classes.head} >Technologies</p>
       <div className={classes.carouselContainer}>
         {skillData.map((item: any) => (
-          <div className={classes.flipCard}>
+          <div key={item.imageSrc} className={classes.flipCard}>
             <Image
               src={item.imageSrc}
               alt={item.alt}

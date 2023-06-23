@@ -21,13 +21,13 @@ export default function Navigation() {
   return (
     <div className={classes.navigation}>
         <div className={classes.hidemenu}>
-      <Link href="#technologies" scroll={false}>
+      <Link className='menu-link' href="#technologies" scroll={false}>
         Technologies
       </Link>
-      <Link href="#projects" scroll={false}>
+      <Link className='menu-link' href="#projects" scroll={false}>
         Projects
       </Link>
-      <Link href="#explorations" scroll={false}>
+      <Link className='menu-link' href="#explorations" scroll={false}>
         Explorations
       </Link>
       </div>
@@ -51,17 +51,17 @@ export default function Navigation() {
         TransitionComponent={Fade}
       >
         <MenuItem onClick={handleClose}>
-          <Link href="#technologies" scroll={false}>
+          <Link className='menu-link' href="#technologies" scroll={false}>
             Technologies
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href="#projects" scroll={false}>
+          <Link className='menu-link' href="#projects" scroll={false}>
             Projects
           </Link>
         </MenuItem>
         <MenuItem onClick={handleClose}>
-          <Link href="#explorations" scroll={false}>
+          <Link className='menu-link' href="#explorations" scroll={false}>
             Explorations
           </Link>
         </MenuItem>
